@@ -1,4 +1,4 @@
-
+#Libraries
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -15,7 +15,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('german_credit_data.csv')
+        df = pd.read_csv('https://raw.githubusercontent.com/achimdesa//Customer_Segmentation_And_Recommendation/main/german_credit_data.csv')
         
         # Add clustering if missing
         if 'Cluster' not in df.columns:
