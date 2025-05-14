@@ -15,7 +15,7 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('german_credit_data.csv')
+        df = pd.read_csv('data/german_credit_data.csv')
         
         # Add clustering if missing
         if 'Cluster' not in df.columns:
